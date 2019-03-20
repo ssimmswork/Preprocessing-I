@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -133,4 +133,71 @@ table {
 html,
 body {
   height: 100%;
+}
+h2,
+h3,
+p,
+ul {
+  font-size: 1.6rem;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1%;
+}
+.container {
+  Margin: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+}
+.topContainer {
+  display: flex;
+  flex-direction: column;
+}
+.topContainer img {
+  width: 50%;
+  align-self: center;
+}
+.topContainer h1 {
+  align-self: center;
+  margin-top: 1%;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.topContainer p {
+  padding: 10px;
+}
+.bottomContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottomContainer h2,
+.bottomContainer h3 {
+  font-weight: bold;
+  margin: 1%;
+}
+.bottomContainer .expList {
+  margin: 5%;
+  text-align: center;
+  width: 100%;
+}
+.bottomContainer .expList ul {
+  background: DARKORANGE;
+  padding: 20px;
+}
+.bottomContainer .expList ul li {
+  background: white;
+  border: 1px solid black;
+  margin: 5px;
+}
+.bottomContainer .block {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
