@@ -98,7 +98,7 @@ table {
 
 html, body {
 	height: 100%;
-}
+	}
 
 h2, h3, p, ul{
 	font-size: 1.6rem;
@@ -132,7 +132,7 @@ a {
 }
 }
 .container{
-	Margin: 5%;
+	margin: auto;
 	display:flex;
 	justify-content: center;
 	flex-direction: column;
@@ -140,6 +140,7 @@ a {
 	animation:colorChange 60s ease;
 	@media @large{
 		.maxWidth();
+		
 	}
 	@media @mobile, @tablet{
 		margin: 20px;
@@ -153,7 +154,7 @@ a {
 .topContainer{
 	display:flex;
 	flex-direction: column;
-	
+	background-color: white;
 	img{
 		width: 100%;
 	@media @mobile{
@@ -219,6 +220,7 @@ a {
 	text-align: center;
 	border: 1px solid black;
 	.layout(10px,10px);
+	background-color: white;
 	@media @mobile{
 	
 		width:100%;
