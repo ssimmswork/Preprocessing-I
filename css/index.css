@@ -1,1 +1,331 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+nh1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@keyframes colorChange {
+  0% {
+    background-color: #877EC1;
+  }
+  25% {
+    background-color: #6C60B2;
+  }
+  50% {
+    background-color: #B792B4;
+  }
+  75% {
+    background-color: #F49F9C;
+  }
+  100% {
+    background-color: #F5A08E;
+  }
+}
+@-webkit-keyframes colorChange {
+  0% {
+    background-color: #877EC1;
+  }
+  25% {
+    background-color: #6C60B2;
+  }
+  50% {
+    background-color: #B792B4;
+  }
+  75% {
+    background-color: #F49F9C;
+  }
+  100% {
+    background-color: #F5A08E;
+  }
+}
+html,
+body {
+  height: 100%;
+}
+h2,
+h3,
+p,
+ul {
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  h2,
+  h3,
+  p,
+  ul {
+    text-align: center;
+    padding: 5px;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 5%;
+  padding: 5px;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    margin: 5px;
+  }
+}
+@media (min-width: 1000px) {
+  nav {
+    width: 1000px;
+  }
+}
+a:hover {
+  color: forestgreen;
+}
+@media (max-width: 500px) {
+  a {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+}
+.container {
+  Margin: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #877EC1;
+  animation: colorChange 60s ease;
+}
+@media (min-width: 1000px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .container {
+    margin: 20px;
+    animation: none;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px), (max-width: 800px) and (max-width: 500px) {
+  .container {
+    background-color: white;
+  }
+}
+.topContainer {
+  display: flex;
+  flex-direction: column;
+}
+.topContainer img {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .topContainer img {
+    width: 100%;
+  }
+}
+.topContainer h1 {
+  margin-top: 1%;
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .topContainer h1 {
+    order: -1;
+  }
+}
+.topContainer p {
+  margin-top: 10px;
+}
+.bottomContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bottomContainer h2,
+.bottomContainer h3 {
+  font-weight: bold;
+  margin: 1%;
+}
+.bottomContainer .expList {
+  margin: 5%;
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .bottomContainer .expList {
+    border-top: 1px solid black;
+  }
+}
+.bottomContainer .expList ul {
+  background: DARKORANGE;
+  padding: 20px;
+}
+.bottomContainer .expList ul li {
+  background: white;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 10px;
+}
+.bottomContainer .mainBlock {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .bottomContainer .mainBlock {
+    flex-direction: column;
+  }
+}
+.bottomContainer .block {
+  text-align: center;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .bottomContainer .block {
+    width: 100%;
+  }
+}
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  flex-direction: column;
+  border-top: 1px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .contactInfo {
+    text-align: center;
+  }
+}
